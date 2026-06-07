@@ -4,6 +4,7 @@
   --light: #f8fafc;
   --muted: #cbd5e1;
   --accent: #f59e0b;
+  --header-height: 64px;
 }
 
 * {
@@ -199,7 +200,7 @@ h3 {
 
   .nav-links {
     position: absolute;
-    top: 64px;
+    top: var(--header-height);
     right: 5%;
     background: #0b1220;
     border: 1px solid #334155;

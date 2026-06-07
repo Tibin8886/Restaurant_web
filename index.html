@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Spice | Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Urban Spice</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <nav id="navMenu" class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Fine Dining Experience</p>
+        <h1>Fresh Flavors, Timeless Hospitality</h1>
+        <p>Welcome to Urban Spice, where global flavors meet a warm neighborhood atmosphere.</p>
+        <a class="btn" href="#reservation">Reserve a Table</a>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Starters</h3>
+            <ul>
+              <li>Tomato Basil Soup <span>$8</span></li>
+              <li>Grilled Prawn Skewers <span>$12</span></li>
+              <li>Classic Bruschetta <span>$9</span></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Main Courses</h3>
+            <ul>
+              <li>Herb Roast Chicken <span>$18</span></li>
+              <li>Wild Mushroom Risotto <span>$17</span></li>
+              <li>Pan-Seared Salmon <span>$22</span></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Desserts</h3>
+            <ul>
+              <li>Chocolate Lava Cake <span>$10</span></li>
+              <li>Vanilla Panna Cotta <span>$9</span></li>
+              <li>Tiramisu <span>$11</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt-bg">
+      <div class="container two-col">
+        <div>
+          <h2>About Us</h2>
+          <p>Since 2012, Urban Spice has blended local ingredients with international culinary inspiration. Our chefs create dishes that are simple, elegant, and unforgettable.</p>
+          <p>Whether you're here for a casual lunch or a special celebration, we make every meal feel memorable.</p>
+        </div>
+        <div class="about-panel">
+          <p><strong>Open Hours</strong></p>
+          <p>Mon - Fri: 11:30 AM - 10:00 PM</p>
+          <p>Sat - Sun: 10:00 AM - 11:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="section">
+      <div class="container">
+        <h2>Reservation</h2>
+        <form id="reservationForm" class="reservation-form" novalidate>
+          <input type="text" id="name" name="name" placeholder="Full Name" required />
+          <input type="email" id="email" name="email" placeholder="Email Address" required />
+          <input type="date" id="date" name="date" required />
+          <input type="time" id="time" name="time" required />
+          <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Guests" required />
+          <button type="submit" class="btn">Book Now</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-bg">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: hello@urbanspice.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 145 Riverfront Avenue, New York, NY</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Urban Spice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

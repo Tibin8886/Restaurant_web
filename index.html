@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olive & Ember | Modern Restaurant</title>
+  <meta name="description" content="A clean, modern, responsive restaurant website sample with menu, reservations, about section and contact details." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo">Olive<span>&</span>Ember</a>
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Open navigation">☰</label>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Modern Dining Experience</p>
+        <h1>Fresh flavours, warm ambience, unforgettable moments.</h1>
+        <p>Welcome to Olive & Ember, where seasonal ingredients, elegant interiors, and thoughtful hospitality come together for a contemporary dining experience.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn primary">View Menu</a>
+          <a href="#reservations" class="btn secondary">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>Relaxed elegance with a passion for flavour.</h2>
+          <p>Olive & Ember is inspired by Mediterranean warmth and modern city dining. Our restaurant combines natural textures, soft lighting, and open-kitchen energy to create a welcoming atmosphere for dinners, celebrations, and casual gatherings.</p>
+          <p>Every dish is prepared with carefully selected ingredients, balanced flavours, and a focus on quality. Whether you are joining us for a quick lunch or a long evening meal, our goal is to make every visit memorable.</p>
+        </div>
+        <div class="about-card">
+          <h3>Opening Hours</h3>
+          <p><strong>Mon - Thu:</strong> 12:00 PM - 10:00 PM</p>
+          <p><strong>Fri - Sat:</strong> 12:00 PM - 11:30 PM</p>
+          <p><strong>Sunday:</strong> 1:00 PM - 9:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our Menu</p>
+          <h2>Chef-selected favourites</h2>
+          <p>Sample dishes for a modern restaurant menu. Replace these with your real items.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-category">
+            <h3>Starters</h3>
+            <div class="menu-item"><div><h4>Roasted Tomato Bruschetta</h4><p>Sourdough, basil oil, garlic, balsamic glaze.</p></div><span>£7.50</span></div>
+            <div class="menu-item"><div><h4>Crispy Calamari</h4><p>Lemon aioli, herbs, chilli flakes.</p></div><span>£9.95</span></div>
+          </article>
+          <article class="menu-category">
+            <h3>Main Courses</h3>
+            <div class="menu-item"><div><h4>Chargrilled Chicken Supreme</h4><p>Herb potatoes, seasonal greens, rosemary jus.</p></div><span>£18.95</span></div>
+            <div class="menu-item"><div><h4>Wild Mushroom Linguine</h4><p>Truffle cream, parmesan, fresh parsley.</p></div><span>£16.50</span></div>
+          </article>
+          <article class="menu-category">
+            <h3>Desserts</h3>
+            <div class="menu-item"><div><h4>Classic Tiramisu</h4><p>Espresso-soaked sponge, mascarpone, cocoa.</p></div><span>£7.95</span></div>
+            <div class="menu-item"><div><h4>Chocolate Fondant</h4><p>Warm chocolate centre, vanilla ice cream.</p></div><span>£8.50</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservations" class="section reservation-section">
+      <div class="container reservation-grid">
+        <div>
+          <p class="eyebrow">Reservations</p>
+          <h2>Book your table today.</h2>
+          <p>Planning a dinner, celebration, or relaxed lunch? Send your details and our team will confirm your booking as soon as possible.</p>
+        </div>
+        <form class="reservation-form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          <div class="form-row">
+            <div><label for="date">Date</label><input type="date" id="date" name="date" required /></div>
+            <div><label for="guests">Guests</label><select id="guests" name="guests" required><option value="">Select</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option></select></div>
+          </div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea>
+          <button type="submit" class="btn primary full">Request Reservation</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div><h3>Olive<span>&</span>Ember</h3><p>Contemporary dining with seasonal flavours and warm hospitality.</p></div>
+      <div><h4>Contact</h4><p>25 Market Street, London, UK</p><p>Email: hello@oliveember.com</p><p>Phone: +44 20 1234 5678</p></div>
+      <div><h4>Follow Us</h4><div class="social-links"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Olive & Ember. All rights reserved.</p></div>
+  </footer>
+</body>
+</html>

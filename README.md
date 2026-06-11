@@ -1,2 +1,5 @@
-# Restaurant_web
-A responsive restaurant website designed to showcase menus, reservations, business information, and customer engagement.
+# Restaurant Website Sample
+
+A clean, modern, responsive restaurant website built with HTML and CSS.
+
+Open `index.html` in your browser.
